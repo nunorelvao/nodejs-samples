@@ -1,0 +1,18 @@
+{
+  "name": "filsystesm.nunorelvao-examples",
+  "version": "0.0.1",
+  "description": "just some sample files",
+  "main": "app.js",
+  "dependencies": {
+    "memory-streams": "^0.1.3",
+    "cli-color": "2.0.0",
+    "tar": "^6.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "@powershell Get-Content mylogo -Encoding UTF8 && node app.js || cat mylogo && node app.js"
+  },
+  "author": "Nuno Relvao",
+  "license": "ISC"
+}
