@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 app.get('/example/:name/:age', (req, res) => {
     console.log(req.params);
     console.log(req.query);
-    res.send(`example with route params NAME: ${req.params.name}, AGE: ${req.params.age}, QUERYSTR: ${req.query.}`);
+    res.send(`example with route params NAME: ${req.params.name}, AGE: ${req.params.age}, QUERYSTR: ${req.query}`);
 })
 
 app.post('/', (req, res) => {
