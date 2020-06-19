@@ -9,6 +9,7 @@ myEmitter.on('tutorial_event1', (param1, param2) => {
 myEmitter.emit('tutorial_event1', 'Hello', 1);
 
 class PersonEmitter extends EventEmitter{
+   
     constructor(name){
         super();
         this._name = name;
@@ -19,9 +20,12 @@ class PersonEmitter extends EventEmitter{
     }
 }
 
-let nunoEventEmitter = new PersonEmitter('Nuno_EventMitter');
-nunoEventEmitter.on('name', () =>{
-    console.log("My Name is : " + PersonEmitter.name)
+
+let nunoEventEmitter = new PersonEmitter('Nuno Relvao');
+
+nunoEventEmitter.on('showname', () =>{
+    console.log("My Name is : " + nunoEventEmitter.name)
 });
 
-nunoEventEmitter.emit('name');
+
+nunoEventEmitter.emit('showname');

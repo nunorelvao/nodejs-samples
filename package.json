@@ -11,7 +11,11 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "@powershell Get-Content mylogo -Encoding UTF8 && node app.js || cat mylogo && node app.js"
+    "events": "@powershell Get-Content mylogo -Encoding UTF8 && node Events/app.js || cat mylogo && node Events/app.js",
+    "basicf": "@powershell Get-Content mylogo -Encoding UTF8 && node BasicFunctions/app.js || cat mylogo && node BasicFunctions/app.js",
+    "filesystem": "@powershell Get-Content mylogo -Encoding UTF8 && cd FileSystem/ && node app.js || cat mylogo && cd FileSystem/ && node app.js",
+    "promptdata":"@powershell Get-Content mylogo -Encoding UTF8 && node PromptData/app.js || cat mylogo && node PromptData/app.js",
+    "http": "@powershell Get-Content mylogo -Encoding UTF8 && cd HTTP/ && node app.js || cat mylogo && cd HTTP/ && node app.js"
   },
   "author": "Nuno Relvao",
   "license": "ISC"
